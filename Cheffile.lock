@@ -1,0 +1,65 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apache2 (1.2.0)
+    apt (1.4.8)
+    ark (0.0.15)
+    build-essential (1.1.2)
+    erlang (1.0.0)
+      yum (>= 0.5.0)
+    install_from (3.0.4)
+    metachef (3.0.4)
+    python (1.0.8)
+      build-essential (>= 0.0.0)
+      yum (>= 0.0.0)
+    rabbitmq (1.6.4)
+      apt (>= 1.4.4)
+      erlang (>= 0.9)
+      yum (>= 0.5.0)
+    redis (3.0.4)
+      install_from (>= 0.0.0)
+      metachef (>= 0.0.0)
+      runit (>= 0.0.0)
+    runit (0.15.0)
+    yum (1.0.0)
+
+GIT
+  remote: git://github.com/att-innovate/chef-cookbook-inspircd.git
+  ref: master
+  sha: d2ae3c4b7995109a29a4164ed6e9d9a35ef15acc
+  specs:
+    irc (0.5.2)
+      build-essential (>= 0.0.0)
+
+GIT
+  remote: git://github.com/heavywater/chef-ganglia.git
+  ref: master
+  sha: ec3fa07528a4a2cd3f7b84746102ef6afe4c0c8d
+  specs:
+    ganglia (0.0.1)
+
+GIT
+  remote: git://github.com/hw-cookbooks/graphite.git
+  ref: master
+  sha: ac0c84bc47d213fa243dbfb24d97d8eda45636f1
+  specs:
+    graphite (0.3.1)
+      apache2 (>= 0.0.0)
+      python (>= 0.0.0)
+
+GIT
+  remote: git://github.com/karmi/cookbook-elasticsearch.git
+  ref: master
+  sha: 42a6bd6472c9ba7fa01bc3016a374e7cac3f57b2
+  specs:
+    elasticsearch (0.0.4)
+      ark (>= 0.0.0)
+
+DEPENDENCIES
+  elasticsearch (>= 0)
+  ganglia (>= 0)
+  graphite (>= 0)
+  irc (>= 0)
+  rabbitmq (>= 0)
+  redis (>= 0)
+

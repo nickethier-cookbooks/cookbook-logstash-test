@@ -1,0 +1,1 @@
+require_recipe 'graphite::default'

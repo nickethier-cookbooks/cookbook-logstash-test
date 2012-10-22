@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'rabbitmq'
+cookbook 'redis'
+cookbook 'riak'
+cookbook 'nagios'
+cookbook 'mongodb'
+
+cookbook 'elasticsearch',
+  :git => 'git://github.com/karmi/cookbook-elasticsearch.git'
+
+cookbook 'graphite',
+  :git => 'git://github.com/hw-cookbooks/graphite.git'
+
+cookbook 'irc',
+  :git => 'git://github.com/att-innovate/chef-cookbook-inspircd.git'
+
+cookbook 'ganglia',
+  :git => 'git://github.com/heavywater/chef-ganglia.git'
+
+# cookbook 'apache2', '>= 1.0.0'
+
+# cookbook 'rvm',
+#   :git => 'https://github.com/fnichol/chef-rvm'
+
+# cookbook 'postgresql',
+#   :git => 'https://github.com/findsyou/cookbooks',
+#   :ref => 'postgresql-improvements'
