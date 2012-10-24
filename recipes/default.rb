@@ -1,5 +1,7 @@
 ## This cookbook is used to set up an evnironment where all logstash plugins can be tested.
 
+require_recipe "logstash-test::rvm"
+
 #inputs
 require_recipe "logstash-test::amqp"
 require_recipe "logstash-test::ganglia"
