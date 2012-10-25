@@ -1,1 +1,1 @@
-require_recipe "rvm::user_install"
+require_recipe "rvm::user"
